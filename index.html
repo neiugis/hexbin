@@ -9,8 +9,8 @@
      <script src="https://d3js.org/d3.v3.min.js"></script>
      <script src="https://d3js.org/d3.hexbin.v0.js"></script>
 
-     <script type="text/javascript" src="https://raw.githubusercontent.com/affinitybridge/d3-demos-quakes/master/js/colorbrewer.js"></script>
-     <script type="text/javascript" src="https://raw.github.com/affinitybridge/d3-demos-quakes/master/js/leaflet.hexbin-layer.js"></script>
+     <script  src="colorbrewer.js"></script>
+     <script src="leaflet.hexbin-layer.js"></script>
 
 
      <style type="text/css">
@@ -103,8 +103,6 @@
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'legend');
-
-
 
      div.innerHTML = '<b>Population Density <br> 2011 <br></b>'; // The legend title, in this case it's Population Density 2011
      var q= d3.scale.quantize()   // D3 also offers other classification methods: https://goo.gl/6DMHFe
