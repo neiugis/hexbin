@@ -66,7 +66,8 @@
   */
  d3.json("https://gist.githubusercontent.com/neiugis/5856cbb6d0fcc7eb84ae936d9de48400/raw/827cdd5f795104e27038f938f3c80f87d4a01bf9/robbery.geojson", function(collection) {
      L.hexLayer(collection, {
-         applyStyle: hex_style
+         applyStyle: hex_style,
+         minZoom:10
      }).addTo(map);
  });
 
