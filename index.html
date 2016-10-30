@@ -87,7 +87,7 @@
      // Maintain a density scale relative to initial zoom level.
      if (!(max && scale)) {
          max = d3.max(hexagons.data(), function (d) { return d.length; });
-         window.alert(max);
+        //  window.alert(max);
          scale = d3.scale.quantize()  // D3 also offers other ways to classify data: https://goo.gl/6DMHFe
                    .domain([0, max])
                    .range(d3.range(classes));
@@ -108,7 +108,7 @@ legend.onAdd = function (map) {
 
      div.innerHTML = '<b>Robbery Incidents <br> 2015 <br></b>'; // The legend title, in this case it's Population Density 2011
      var q= d3.scale.quantize()   // D3 also offers other classification methods: https://goo.gl/6DMHFe
-               .domain([0, 269])
+               .domain([0, 301])
                .range(d3.range(classes));
      // Loop through our the classes and generate a label with a colored square for each interval.
      // If you are creating a similar choropleth map, you do not need to change lines below.
